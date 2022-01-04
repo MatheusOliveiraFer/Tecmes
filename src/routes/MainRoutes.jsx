@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from '../pages/Home';
+import { PainelProducao } from '../pages/P.Producao/index';
 
 export const MainRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="" element={<PainelProducao />} />
         </Routes>
     );
 }
