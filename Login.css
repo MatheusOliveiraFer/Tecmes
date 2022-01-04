@@ -183,10 +183,13 @@ body {
     color: #FFF;
 }
 
-/* --- CSS ÁREA RESPONSIVIDADE --- */
+/* --- CSS ÁREA RESPONSIVIDADE IPHONE 5/SE --- */
 
 
-@media( max-width: 360px ) {
+
+/* --- CSS ÁREA RESPONSIVIDADE MOTO G4 --- */
+
+@media(max-width: 360px) {
 
     /*CSS Responsividade dos Textos*/
     .container {
@@ -225,7 +228,7 @@ body {
         padding-left: 0;
     }
     .container-login {
-        width: 90%;
+        width: 88%;
     }
     .input-user input {
         width: 90%;
@@ -257,4 +260,87 @@ body {
         color: #FFF;
     }
 }
+
+/* --- CSS ÁREA RESPONSIVIDADE MOTO G4 E GALAXY S5 --- */
+@media(max-width: 411px) {
+
+    /*CSS Responsividade dos Textos*/
+    .container {
+        flex-direction: column;
+    }
+    .information {
+        padding-left: 20px;
+        z-index: 997;
+    }
+    .title h1 {
+        font-size: 50px;
+        color: #FFF;
+        text-shadow: rgb(58, 56, 56) 5px -3px 3px;
+    }
+    .title h2 {
+        font-size: 15px;
+        margin-top: 35px;
+    }
+    .subtitle {
+        width: 300px;
+        font-size: 12px;
+        margin-top: -40px;
+        color: #FFF;
+        
+    }
+    .information {
+        height: 170px;
+    }
+
+    /*CSS Responsividade dos Login*/
+
+    .login {
+        clip-path: none;
+        width: 100%;
+        margin-top: -670px;
+        padding-left: 0;
+    }
+    .container-login {
+        width: 88%;
+    }
+    .input-user input {
+        width: 90%;
+        height: 50px;
+    }
+    .button-entrar a {
+        width: 92%;
+        height: 30px;
+        line-height: 30px;
+    }
+    .forgot-password a{
+        margin-left: 90px;
+    }
+    .division_line_form {
+        width: 90%;
+    }
+    .button-create-new a {
+        margin-left: 40px;
+        height: 35px;
+    }
+    .footer {
+        margin-top: -90px;
+    }
+    .footer_left {
+        color: #FFF;
+    }
+    .footer_right {
+        margin-left: 3px;
+        color: #FFF;
+    }
+}
+@media(max-width: 320px) {
+    .login-title h1 {
+        font-size: 25px;
+    }
+    .forgot-password a {
+        margin-left: 50px;
+    }
+}
+
+
 
