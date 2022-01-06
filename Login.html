@@ -24,22 +24,20 @@
                 Para melhor gestão e controle de Planejamentos e PCP.
             </div><!--subtitle-->
         </div><!--information-->
-        <div class="division">
-            <div class="division_line"></div>
-        </div><!--division-->
         <div class="login">
             <div class="container-login">
                 <div class="login-title">
                     <h1>Entrar</h1>
                     <h2>Gerencie dados em tempo real de forma otimizada.</h2>
                 </div><!--login-title-->
-                <div class="input-user">
-                    <input type="text" name="input" placeholder="Digite seu usuário">
+                <form class="input-user">
+                    <input type="text" name="input" id="email"
+                    pattern=".+@globex\.com" size="30" placeholder="Digite seu usuário" required>
                     <input type="password" name="input" placeholder="Digite sua senha">
-                </div><!--input-user-->
-                <div class="button-entrar">
-                    <a href="/">Entrar</a>
-                </div><!--button-->
+                    <div class="button-entrar">
+                        <a href="/">Entrar</a>
+                    </div><!--button-->
+                </form><!--input-user-->
                 <div class="forgot-password">
                     <a href="/forgot-password">Esqueceu a senha?</a>
                 </div>

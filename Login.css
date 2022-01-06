@@ -1,38 +1,380 @@
 body {
-	margin:0;
-	padding:0;
+    margin: 0;
+    padding: 0;
 }
-::placeholder {
-    color:#424444;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .input-user input:focus {
+input:focus { 
     outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
-}
-.button-entrar a:hover {
-    background-color: #39a89a;
+    border-color: #424444;
+    box-shadow: 0 0 10px #424444;
 }
 
-/* RESPONSIVIDADE IPHONE 6/7/8 */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 769px) and (max-width: 2560px) {
+
+   @media screen and (max-width: 1440px) {
     ::placeholder {
         color:#424444;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+    }
+    .information {
+        width: 50%;
+        height: 797px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-column h1 {
+        font-size: 150px;
+        text-shadow: rgb(58, 56, 56) 4px -1px 3px;
+        font-family: 'Lora', serif;
+        color: #47d0bd;
+        margin-top: 200px;
+    }
+    .subtitle {
+        width: 80%;
+        font-size: 25px;
+        margin-top: -90px;
+        margin-left: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color: #555959;
+        font-weight: bold;
+    }
+    .login {
+        width: 50%;
+        height: 797px;
+        background-color: #4f6363;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-login {
+        width: 50%;
+        height: 550px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #FFF;
+        box-shadow: rgb(70, 66, 66) 5px 3px 4px;
+    }
+
+    .login-title h1 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .login-title h2 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .input-user input {
+        width: 95%;
+        height: 50px;
+        border: 0.5px solid #47d0bd;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #424d4d;
+    }
+    .button-entrar a {
+        display: block;
+        width: 96%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #47d0bd;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .forgot-password a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
         font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #47d0bd;
+        text-align: center;
+    }
+   
+    .button-create-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-create-new a{
+        display: block;
+        width: 95%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #369686;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        box-shadow: 0 0 10px #719ECE;
+        margin-top: 30px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        position: fixed;
+        bottom:0;
+        left:0;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .footer_left {
+        padding-right: 3px;
+        color: #555959;
+    } 
+    .footer_right {
+        color: #FFF;
+    }
+   }
+   @media screen and (min-width: 769px) and (max-width: 1327px) {
+       .container-login {
+           width: 60%;
+       }
+       .subtitle {
+           width: 80%;
+           font-size: 20px;
+       }
+   }
+   @media screen and (min-width: 769px) and (max-width: 1220px) {
+    
+    .title h1 {
+        font-size: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1116px) {
+    
+    .title h1 {
+        margin-right: 50px;
+    }
+    .container-login {
+        width: 70%;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 912px) {
+    
+    .title h1 {
+        margin-right: 10px;
+    }
+    .container-login {
+        width: 70%;
+        margin-left: 50px;
+    }
+  }
+}
+
+
+/* RESPONSIVIDADE Ipad */
+@media screen and (max-width: 768px) {
+    ::placeholder {
+        color:#424444;
+        font-size: 15px;
         font-weight: 500;
       }
 
     body {
         width: 100%;
-        height: 667px;
+        height: 1024px;
         display: flex;
         flex-direction: column;
     }
     .container {
         width: 100%;
-        height: 607px;
+        height: 676px;
+        background-color: #4f6363;
+        display: flex;
+        flex-direction: column;
+    }
+    .information {
+        width: 80%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-column h1 {
+        font-size: 40px;
+        color: #FFF;
+        margin-top: 10px;
+        text-shadow: rgb(58, 56, 56) 4px -1px 3px;
+        padding-left: 15px;
+    }
+    .subtitle {
+        width: 95%;
+        font-size: 15px;
+        color: #FFF;
+        margin-bottom: 10px;
+        font-weight: 300;
+        padding-left: 15px;
+    }
+    .division {
+        display: none;
+    }
+    .login {
+        width: 100%;
+        height: 676px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: none;
+    }
+    .container-login {
+        width: 90%;
+        height: 500px;
+        background-color: blue;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #FFF;
+        box-shadow: rgb(70, 66, 66) 5px 3px 4px;
+    }
+    .login-title h1 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .login-title h2 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .input-user input {
+        width: 95%;
+        height: 50px;
+        border: 0.5px solid #47d0bd;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #424d4d;
+    }
+    .button-entrar a {
+        display: block;
+        width: 96%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #47d0bd;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .forgot-password a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #47d0bd;
+        text-align: center;
+    }
+   
+    .button-create-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-create-new a{
+        display: block;
+        width: 95%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #369686;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        box-shadow: 0 0 10px #719ECE;
+        margin-top: 30px;
+    }
+    .footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        background-color: #4f6363;
+    }
+    .footer_left {
+        padding-right: 3px;
+        color: #FFF;
+    } 
+}
+
+/* RESPONSIVIDADE Surface Duo */
+@media screen and (max-width: 540px) {
+    ::placeholder {
+        color:#424444;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+    body {
+        width: 100%;
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        height: 676px;
         background-color: #4f6363;
         display: flex;
         flex-direction: column;
@@ -52,9 +394,9 @@ body {
     }
     .subtitle {
         width: 95%;
-        font-size: 14px;
-        margin-top: -28px;
+        font-size: 15px;
         color: #FFF;
+        margin-bottom: 10px;
         font-weight: 300;
         padding-left: 15px;
     }
@@ -63,14 +405,16 @@ body {
     }
     .login {
         width: 100%;
-        height: 493px;
+        height: 676px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .container-login {
-        width: 85%;
-        height: 493px;
+        width: 90%;
+        height: 500px;
+        background-color: blue;
         border-radius: 10px;
         padding: 10px;
         background-color: #FFF;
@@ -165,147 +509,517 @@ body {
         padding-right: 3px;
         color: #FFF;
     } 
-    /* RESPONSIVIDADE IPHONE X */
-    @media screen and (max-height: 812px) {
-        ::placeholder {
-            font-size: 15px;
-          }
+}
+
+/* RESPONSIVIDADE IPHONE 6/7/8 PLUS */
+@media screen and (max-width: 414px) {
+    ::placeholder {
+        color:#424444;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+    body {
+        width: 100%;
+        height: 736px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        height: 676px;
+        background-color: #4f6363;
+        display: flex;
+        flex-direction: column;
+    }
+    .information {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-column h1 {
+        font-size: 40px;
+        color: #FFF;
+        margin-top: 10px;
+        text-shadow: rgb(58, 56, 56) 4px -1px 3px;
+        padding-left: 15px;
+    }
+    .subtitle {
+        width: 95%;
+        font-size: 15px;
+        color: #FFF;
+        margin-bottom: 10px;
+        font-weight: 300;
+        padding-left: 15px;
+    }
+    .division {
+        display: none;
+    }
+    .login {
+        width: 100%;
+        height: 676px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-login {
+        width: 85%;
+        height: 500px;
+        background-color: blue;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #FFF;
+        box-shadow: rgb(70, 66, 66) 5px 3px 4px;
+    }
+    .login-title h1 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .login-title h2 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .input-user input {
+        width: 95%;
+        height: 50px;
+        border: 0.5px solid #47d0bd;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #424d4d;
+    }
+    .button-entrar a {
+        display: block;
+        width: 96%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #47d0bd;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .forgot-password a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #47d0bd;
+        text-align: center;
+    }
+   
+    .button-create-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-create-new a{
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #369686;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        box-shadow: 0 0 10px #719ECE;
+        margin-top: 30px;
+    }
+    .footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        background-color: #4f6363;
+    }
+    .footer_left {
+        padding-right: 3px;
+        color: #FFF;
+    } 
+}
+
+/* RESPONSIVIDADE PIXEL 2 */
+@media screen and (max-width: 411px) {
+    ::placeholder {
+        color:#424444;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+    body {
+        width: 100%;
+        height: 731px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        height: 671px;
+        background-color: #4f6363;
+        display: flex;
+        flex-direction: column;
+    }
+    .information {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-column h1 {
+        font-size: 40px;
+        color: #FFF;
+        margin-top: 10px;
+        text-shadow: rgb(58, 56, 56) 4px -1px 3px;
+        padding-left: 15px;
+    }
+    .subtitle {
+        width: 95%;
+        font-size: 14px;
+        margin-top: -28px;
+        color: #FFF;
+        font-weight: 300;
+        padding-left: 15px;
+    }
+    .division {
+        display: none;
+    }
+    .login {
+        width: 100%;
+        height: 607px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-login {
+        width: 85%;
+        height: 500px;
+        background-color: blue;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #FFF;
+        box-shadow: rgb(70, 66, 66) 5px 3px 4px;
+    }
+    .login-title h1 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .login-title h2 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .input-user input {
+        width: 95%;
+        height: 50px;
+        border: 0.5px solid #47d0bd;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #424d4d;
+    }
+    .button-entrar a {
+        display: block;
+        width: 96%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #47d0bd;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .forgot-password a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #47d0bd;
+        text-align: center;
+    }
+   
+    .button-create-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-create-new a{
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #369686;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        box-shadow: 0 0 10px #719ECE;
+        margin-top: 30px;
+    }
+    .footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        background-color: #4f6363;
+    }
+    .footer_left {
+        padding-right: 3px;
+        color: #FFF;
+    } 
+    /* RESPONSIVIDADE IPHONE PIXEL 2XL */
+    @media screen and (min-height: 823px){
         body {
-            width: 100%;
-            height: 812px;
-            display: flex;
-            flex-direction: column;
+            height: 823px;
         }
         .container {
-            width: 100%;
-            height: 752px;
-            background-color: #4f6363;
-            display: flex;
-            flex-direction: column;
-        }
-        .title-column h1 {
-            font-size: 40px;
-        }
-        .subtitle {
-            width: 95%;
-            font-size: 14px;
-            margin-top: -28px;
-            color: #FFF;
-            font-weight: 300;
-            padding-left: 15px;
-        }
-        .division {
-            display: none;
+            height: 763px;
+            justify-content: center;
+            align-items: center;
         }
         .login {
-            width: 100%;
-            height: 752px;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            align-items: center;
+            margin-top: 20px;
         }
-        .container-login {
-            width: 85%;
-            height: 600px;
-            border-radius: 10px;
-            padding: 12px;
-            background-color: #FFF;
-            box-shadow: rgb(70, 66, 66) 5px 3px 4px;
-        }
-        .login-title h1 {
-            color: #424444;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 35px;
-            font-weight: bold;
-        }
-        .login-title h2 {
-            color: #424444;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 17px;
-            font-weight: 500;
-        }
-        .input-user input {
-            width: 95%;
-            height: 50px;
-            border: 0.5px solid #47d0bd;
-            border-radius: 10px;
-            padding-left: 10px;
-            margin-bottom: 25px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 20px;
-            color: #424d4d;
-        }
-        .button-entrar a {
-            display: block;
-            width: 96%;
-            height: 30px;
-            line-height: 30px;
-            padding: 12px 5px;
-            background-color: #47d0bd;
-            color: #FFF;
-            border-radius: 10px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-        .forgot-password a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 13px;
-            font-weight: 500;
-            text-decoration: none;
-            color: #47d0bd;
-            text-align: center;
-        }
-       
-        .button-create-new {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .button-create-new a{
-            display: block;
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            padding: 12px 5px;
-            background-color: #369686;
-            color: #FFF;
-            border-radius: 10px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 13px;
-            box-shadow: 0 0 10px #719ECE;
-            margin-top: 30px;
-        }
-        .footer {
-            width: 100%;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 13px;
-            background-color: #4f6363;
-        }
-        .footer_left {
-            padding-right: 3px;
-            color: #FFF;
-        }  
+       .title h1 {
+           font-size: 50px;
+       } 
+       .subtitle {
+           font-size: 20px;
+       }
     }
 }
 
+/* RESPONSIVIDADE IPHONE 6/7/8 */
+@media screen and (max-width: 375px) {
+    ::placeholder {
+        color:#424444;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+    body {
+        width: 100%;
+        height: 667px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        height: 607px;
+        background-color: #4f6363;
+        display: flex;
+        flex-direction: column;
+    }
+    .information {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-column h1 {
+        font-size: 40px;
+        color: #FFF;
+        margin-top: 10px;
+        text-shadow: rgb(58, 56, 56) 4px -1px 3px;
+        padding-left: 15px;
+    }
+    .subtitle {
+        width: 95%;
+        font-size: 14px;
+        margin-top: -28px;
+        color: #FFF;
+        font-weight: 300;
+        padding-left: 15px;
+    }
+    .division {
+        display: none;
+    }
+    .login {
+        width: 100%;
+        height: 507px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-login {
+        width: 85%;
+        height: 607px;
+        background-color: blue;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #FFF;
+        box-shadow: rgb(70, 66, 66) 5px 3px 4px;
+    }
+    .login-title h1 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .login-title h2 {
+        color: #424444;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .input-user input {
+        width: 95%;
+        height: 50px;
+        border: 0.5px solid #47d0bd;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #424d4d;
+    }
+    .button-entrar a {
+        display: block;
+        width: 96%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #47d0bd;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .forgot-password a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #47d0bd;
+        text-align: center;
+    }
+   
+    .button-create-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-create-new a{
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        padding: 12px 5px;
+        background-color: #369686;
+        color: #FFF;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        box-shadow: 0 0 10px #719ECE;
+        margin-top: 30px;
+    }
+    .footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        background-color: #4f6363;
+    }
+    .footer_left {
+        padding-right: 3px;
+        color: #FFF;
+    } 
+
+     /* RESPONSIVIDADE IPHONE X */
+     @media screen and (min-height: 812px) {
+        ::placeholder {
+            font-size: 14px;
+            font-weight: 600;
+          }
+        body {
+            height: 812px;
+        }
+        .login-title h1 {
+            font-size: 30px;
+        }
+        .login-tile h2 {
+            font-size: 15px;
+        }
+        .subtitle {
+            font-size: 18px;
+        }
+        .container {
+            height: 812px;
+        }
+        .login {
+            height: 600px;
+            margin-top: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
 
 /* RESPONSIVIDADE MOTO G4 */
 @media screen and (max-width: 360px) {
@@ -461,7 +1175,7 @@ body {
 }
 
 /* RESPONSIVIDADE IPHONE 5/SE */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {  
     ::placeholder {
         color:#424444;
         font-size: 13px;
@@ -760,193 +1474,3 @@ body {
     } 
 }
 
-
-
-
-
-CÓDIGOS ANTERIORES
-
-body {
-	margin:0;
-	padding:0;
-    display: flex;
-    flex-direction: column;
-}
-::placeholder {
-    color:#424444;
-    font-size: 16px;
-    font-weight: 600;
-  }
-.container {
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-.information {
-    width: 50%;
-    height: 797px;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.title {
-    display: flex;
-    flex-direction: column;
-    margin-top: -100px;
-}
-.title-column{
-    display: flex;
-}
-.title h1{
-    color: #47d0bd;
-    font-size: 130px;
-    font-weight: bold;
-    font-family: 'Lora', serif;
-    text-shadow: rgb(109, 106, 106) 5px -3px 3px;
-    text-transform: uppercase;
-}
-.title h2 {
-    font-size: 50px;
-    color: #47d0bd;
-    margin-top: 80px;
-}
-.subtitle {
-    font-size: 25px;
-    color: #555959;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-top: -70px;
-}
-
-
-/* ----- CSS ÁREA LOGIN ---- */
-/* .login {
-    width: 50%;
-    height: 797px;
-    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #4f6363;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-left: 50px;
-}
-.division {
-    display: flex;
-    align-items: center;
-}
-.division_line {
-    width: 2px;
-    height: 500px;
-    background-color: #47d0bd;
-}
-.container-login {
-    width: 390px;
-    height: 580px;
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: rgb(70, 66, 66) 5px 3px 4px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-}
-.login-title h1 {
-    color: #424444;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-}
-.login-title h2 {
-    color: #424444;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-}
-.input-user input {
-    width: 360px;
-    height: 63px;
-    border: 0.5px solid #47d0bd;
-    border-radius: 10px;
-    padding-left: 10px;
-    margin-bottom: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #424444;
-}
-.input-user input:focus {
-    outline: none !important;
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
-}
-.button-entrar a {
-    display: block;
-    width: 365px;
-    height: 40px;
-    line-height: 40px;
-    padding: 12px 5px;
-    background-color: #47d0bd;
-    color: #FFF;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
-    margin-bottom: 20px;
-}
-.button-entrar a:hover {
-    background-color: #39a89a;
-}
-.forgot-password a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #47d0bd;
-    text-align: center;
-    margin-left: 110px;
-}
-.division_line_form {
-    width: 360px;
-    height: 2px;
-    background-color: #47d0bd;
-    margin-top: 20px;
-}
-.button-create-new a{
-    display: block;
-    width: 225px;
-    height: 40px;
-    line-height: 40px;
-    padding: 12px 5px;
-    background-color: #369686;
-    color: #FFF;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px #719ECE;
-    margin-left: 70px;
-}
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -40px;
-    font-size: 13px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 997;
-}
-.footer_left {
-    color: #4f6363;
-}
-.footer_right {
-    margin-left: 3px;
-    color: #FFF;
-} */
