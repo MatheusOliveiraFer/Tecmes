@@ -2,14 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rota Principal</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript">
+      window.onload = function(){
+        document.querySelector(".menuMobile").addEventListener("click", function(){
+          if(document.querySelector(".menu nav ul").style.display == 'flex') {
+            document.querySelector(".menu nav ul").style.display = 'none';
+          } else {
+            document.querySelector(".menu nav ul").style.display = 'flex';
+          }
+        });
+      };
+      window.addEventListener('resize', function () {
+        var largura = window.innerWidth;
+
+        if (largura > 600)
+           document.querySelector(".menu nav ul").removeAttribute('style');
+        });
+      </script>
+      
+    <title>TECMES</title>
   </head>
   <body>
-   
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="">Tecmes</a>
+        </div>
+        <div class="menu">
+          <nav>
+            <div class="menuMobile">
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+            </div>
+            <ul>
+              <li class="active"><a href="">HOME</a></li>
+              <li><a href="/">Ordem de Produção</a></li>
+              <li><a href="AProducao">Painel Produção</a></li>
+              <li><a href="">Pedidos</a></li>
+              <li><a href="Login.html">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <footer>TECMES 2022 - Todos os direitos reservados.</footer>
   </body>
 </html>

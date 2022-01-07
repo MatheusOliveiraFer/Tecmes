@@ -1,0 +1,161 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+::placeholder {
+  color:#424444;
+  font-size: 20px;
+  font-weight: 500;
+}
+input:focus { 
+  outline: none !important;
+  border-color: #424444;
+  box-shadow: 0 0 10px #424444;
+}
+.content {
+    width: 70%;
+    height: 600px;
+    -webkit-box-shadow: -1px 4px 17px 1px rgba(0,0,0,0.72); 
+    box-shadow: -1px 4px 17px 1px rgba(0,0,0,0.72);
+    z-index: 997;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.title_formulario {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #24EDD2;
+}
+.title_formulario_h1 {
+  font-size: 35px;
+  color: #000;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+}
+.title_formulario_h2 {
+  font-size: 20px;
+}
+.painel_OP {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+.input_left {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input_left, .title {
+  margin-left: 40px;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.cliente, 
+.quantidade, 
+.N_Ordem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_right {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input_left, .title {
+  margin-left: 40px;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.produto, 
+.pedido,
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.painel_OP label {
+  font-size: 20px;
+}
+.painel_OP input {
+  width: 80%;
+  height: 50px;
+  border: 0.5px solid #47d0bd;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #424d4d;
+}
+.AreaButton {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.button_left {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-right {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_left a{
+  display: block;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  padding: 12px 5px;
+  background-color: #369686;
+  color: #FFF;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  box-shadow: 0 0 10px #719ECE;
+  margin-top: 30px;
+}
+.button-right a{
+  display: block;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  padding: 12px 5px;
+  background-color: #1b3330;
+  color: #FFF;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  box-shadow: 0 0 10px #719ECE;
+  margin-top: 30px;
+}
+
+
