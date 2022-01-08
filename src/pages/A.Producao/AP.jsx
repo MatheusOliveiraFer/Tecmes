@@ -1,6 +1,27 @@
 import './styleAP.css'
 
-export const AProducao = () => {
+import React from 'react';
+import { useState } from 'react';
+import { PainelProducao } from '../OP/indexOP';
+
+
+export const AProducao = (props) => {
+    const [valor, setValor] = useState(385);
+    const [produto, setProduto] = useState('');
+
+    const [NumeroOrdem, setNumeroOrdem] = useState();
+
+    const HandleNumeroOrdem = (e) => {
+        setNumeroOrdem(e.target.value);
+    }
+    const ApontamentoEstoque = () => {
+        setValor(valor - NumeroOrdem);
+    }
+    
+    const HandleProdutoNome = (e) => {
+        setProduto(e.target.value);
+    }
+
     return (
         <section>
             <div className="content_AP">
@@ -11,7 +32,7 @@ export const AProducao = () => {
                     <div className="input_left_AP">
                         <div className="title_AP">Número da Ordem:</div>
                         <div className="N_Ordem_AP">
-                            <input type="text" name="input" id="ordem" placeholder="Digite o número da ordem" required />
+                            <input type="number" name="input" id="ordem"  placeholder="Digite o número da ordem" required />
                         </div>
                         <div className="title_AP">Cliente:</div>
                         <div className="cliente_AP">
@@ -26,11 +47,11 @@ export const AProducao = () => {
                     <div className="input_right_AP">
                         <div className="title_AP">Produto:</div>
                         <div className="produto_AP">
-                            <input type="text" name="input" id="produto" placeholder="Digite nome do produto" required />
+                            <input type="text" name="input" id="produto" value={produto} onChange={HandleProdutoNome} placeholder="Digite nome do produto" required />
                         </div>
                         <div className="title_AP">Peso:</div>
                         <div className="pedido_AP">
-                            <input type="number" name="input" id="peso" placeholder="Insira a quantidade" required />
+                            <input type="number" name="input" id="peso" value={NumeroOrdem} onChange={HandleNumeroOrdem} placeholder="Insira a quantidade" required />
                         </div>
                         <div className="title_AP">Data:</div>
                         <div className="data_AP">
@@ -56,36 +77,38 @@ export const AProducao = () => {
                             <th className="t-small">Código</th>
                             <th className="t-medium">Peso da Bobina</th>
                             <th>Unidade de Medida</th>
+                            <th>Produto</th>
                             <th className="t-medium">State</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><label><input type="checkbox" /></label></td>
-                            <td>1</td>
-                            <td></td>
-                            <td>One little text</td>
+                            <td><label><input type="checkbox" onClick={ApontamentoEstoque}/></label></td>
+                            <td>32</td>
+                            <td>{valor}</td>
+                            <td>KG</td>
+                            <td>{produto}</td>
                             <td class="t-status t-active">Active</td>
                         </tr>
                         <tr>
                             <td><label><input type="checkbox" /></label></td>
-                            <td>1</td>
-                            <td>27/09/2013</td>
-                            <td>One little text</td>
+                            <td>12</td>
+                            <td>134,435</td>
+                            <td>KG</td>
                             <td class="t-status t-inactive">Inactive</td>
                         </tr>
                         <tr>
                             <td><label><input type="checkbox" /></label></td>
-                            <td>1</td>
-                            <td>27/09/2013</td>
-                            <td>One little text</td>
+                            <td>14</td>
+                            <td>350,344</td>
+                            <td>KG</td>
                             <td class="t-status t-draft">Draft</td>
                         </tr>
                         <tr>
                             <td><label><input type="checkbox" /></label></td>
-                            <td>1</td>
-                            <td>27/09/2013</td>
-                            <td>One little text</td>
+                            <td>25</td>
+                            <td>112,53</td>
+                            <td>Kg</td>
                             <td className="t-status t-scheduled">Scheduled</td>
                         </tr>
                     </tbody>

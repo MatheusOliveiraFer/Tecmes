@@ -1,6 +1,13 @@
 import './styleOP.css'
 
-export const PainelProducao = () => {
+export const PainelProducao = (props) => {
+    
+    // const [quantidade, setQuantidade] = useState();
+    // const valor = 0;
+    
+    // const handleInput = (e) => {
+    //     setQuantidade(e.target.value);
+    // }
     return(
         <section>
             <div className="content">
@@ -16,11 +23,11 @@ export const PainelProducao = () => {
                             </div>
                             <div className="title">Quantidade:</div>
                             <div className="quantidade">
-                                <input type="number" name="input" id="quantidade" placeholder="Insira a quantidade" required />
+                                <input type="number"  placeholder="Insira a quantidade" required />
                             </div>
                             <div className="title">Número da Ordem:</div>
                             <div className="N_Ordem">
-                                <input type="text" name="input" id="ordem" placeholder="Digite o número da ordem" required />
+                                <input type="text" name="input"  id="ordem" placeholder="Digite o número da ordem" required />
                             </div>
                     </div>
                     <div className="input_right">
@@ -41,9 +48,9 @@ export const PainelProducao = () => {
                 <div className="AreaButton">
 
                     <div class="button_left"> 
-                        <a href="/">Salvar</a>
+                        <a href="/" onClick="leva">Salvar</a>
                     </div>
-
+                    
                     <div class="button-right"> 
                         <a href="login.html">Cancelar</a>
                     </div>
