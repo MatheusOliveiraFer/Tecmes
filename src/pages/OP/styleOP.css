@@ -43,22 +43,17 @@ input:focus {
 }
 .painel_OP {
   width: 100%;
-  height: 400px;
+  height: 380px;
   display: flex;
 }
 .input_left {
   width: 50%;
-  height: 500px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.input_left, .title {
-  margin-left: 40px;
-  font-size: 23px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
+
 .cliente, 
 .quantidade, 
 .N_Ordem {
@@ -68,14 +63,14 @@ input:focus {
 }
 .input_right {
   width: 50%;
-  height: 500px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.input_left, .title {
+.title {
   margin-left: 40px;
-  font-size: 23px;
+  font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
@@ -104,22 +99,22 @@ input:focus {
 }
 .AreaButton {
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
 }
 
 .button_left {
   width: 50%;
-  height: 50px;
+  height: 130px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .button-right {
   width: 50%;
-  height: 50px;
+  height: 130px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -138,7 +133,6 @@ input:focus {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   box-shadow: 0 0 10px #719ECE;
-  margin-top: 30px;
 }
 .button-right a{
   display: block;
@@ -155,7 +149,6 @@ input:focus {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   box-shadow: 0 0 10px #719ECE;
-  margin-top: 30px;
 }
 
 

@@ -92,11 +92,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(99, 89, 89);
-  position:absolute;
-	bottom:0;
-  
+  color: rgb(99, 89, 89);  
+  margin-top: 20px;
 }
+
 @media screen and (max-width: 745px) {
   nav ul {
 		flex-direction: column;

@@ -1,22 +1,14 @@
-import './style.css'
+import './styleOP.css'
 
-export const AProducao = () => {
+export const PainelProducao = () => {
     return(
-        // <div className="color">
-        //     <h1>Painel Ordem de Produção</h1>
-        //     <a href="../../login.html">Ir para login</a>
-        // </div>
         <section>
             <div className="content">
                 <div className="title_formulario">
-                        <div className="title_formulario_h1">Apontamento de Produção</div>
+                        <div className="title_formulario_h1">Painel Ordem de Produção</div>
                 </div>
                 <form class="painel_OP">
                     <div className="input_left">
-                            <div className="title">Número da Ordem:</div>
-                            <div className="N_Ordem">
-                                <input type="text" name="input" id="ordem" placeholder="Digite o número da ordem" required />
-                            </div>
                             <div className="title">Cliente:</div>
                             <div className="cliente">
                                 <input type="text" name="input" id="email"
@@ -25,6 +17,10 @@ export const AProducao = () => {
                             <div className="title">Quantidade:</div>
                             <div className="quantidade">
                                 <input type="number" name="input" id="quantidade" placeholder="Insira a quantidade" required />
+                            </div>
+                            <div className="title">Número da Ordem:</div>
+                            <div className="N_Ordem">
+                                <input type="text" name="input" id="ordem" placeholder="Digite o número da ordem" required />
                             </div>
                     </div>
                     <div className="input_right">
