@@ -2,12 +2,6 @@ import './styleOP.css'
 
 export const PainelProducao = (props) => {
     
-    // const [quantidade, setQuantidade] = useState();
-    // const valor = 0;
-    
-    // const handleInput = (e) => {
-    //     setQuantidade(e.target.value);
-    // }
     return(
         <section>
             <div className="content">

@@ -17,7 +17,7 @@ export const AProducao = (props) => {
     const ApontamentoEstoque = () => {
         setValor(valor - NumeroOrdem);
     }
-    
+
     const HandleProdutoNome = (e) => {
         setProduto(e.target.value);
     }
@@ -32,7 +32,7 @@ export const AProducao = (props) => {
                     <div className="input_left_AP">
                         <div className="title_AP">Número da Ordem:</div>
                         <div className="N_Ordem_AP">
-                            <input type="number" name="input" id="ordem"  placeholder="Digite o número da ordem" required />
+                            <input type="number" name="input" id="ordem" placeholder="Digite o número da ordem" required />
                         </div>
                         <div className="title_AP">Cliente:</div>
                         <div className="cliente_AP">
@@ -69,7 +69,7 @@ export const AProducao = (props) => {
                 </div>
             </div>
             <div id="abrirModal" className="modal">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
                 <table className="table table-action">
                     <thead>
                         <tr>
@@ -83,7 +83,7 @@ export const AProducao = (props) => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><label><input type="checkbox" onClick={ApontamentoEstoque}/></label></td>
+                            <td><label><input type="checkbox" onClick={ApontamentoEstoque} /></label></td>
                             <td>32</td>
                             <td>{valor}</td>
                             <td>KG</td>
@@ -95,6 +95,7 @@ export const AProducao = (props) => {
                             <td>12</td>
                             <td>134,435</td>
                             <td>KG</td>
+                            <td>Cart.-Depakote ER</td>
                             <td class="t-status t-inactive">Inactive</td>
                         </tr>
                         <tr>
@@ -102,6 +103,7 @@ export const AProducao = (props) => {
                             <td>14</td>
                             <td>350,344</td>
                             <td>KG</td>
+                            <td>Cart.- Iruxol</td>
                             <td class="t-status t-draft">Draft</td>
                         </tr>
                         <tr>
@@ -109,6 +111,7 @@ export const AProducao = (props) => {
                             <td>25</td>
                             <td>112,53</td>
                             <td>Kg</td>
+                            <td>Cat.-Depakene 10MG</td>
                             <td className="t-status t-scheduled">Scheduled</td>
                         </tr>
                     </tbody>

@@ -47,6 +47,7 @@ header {
 	display:flex;
 	align-items:flex-start;
 	justify-content: center;
+	z-index: 997;
 }
 
 nav ul,
@@ -96,7 +97,7 @@ footer {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 844px) {
   nav ul {
 		flex-direction: column;
 		display:none;
@@ -120,3 +121,8 @@ footer {
 	}
 }
 
+@media screen and (min-width: 320px) and (max-width: 844px) { 
+	.logo {
+		align-items: center;
+	}
+}
