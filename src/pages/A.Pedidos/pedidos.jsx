@@ -1,6 +1,20 @@
 import './pedidos.css'
 
+import React from 'react';
+import { useState } from 'react';
+
+
 export const Pedidos = (props) => {
+    const [valorProduzido, setValorProduzido] = useState(265);
+    const [valorCampo, setValorCampo] = useState();
+
+    const HandleValorCampo = (e) => {
+        setValorCampo(e.target.value);
+    }
+
+    const Faturar = () => {
+        setValorProduzido( valorProduzido - valorCampo);
+    }
 
     return (
         <section>
@@ -13,7 +27,7 @@ export const Pedidos = (props) => {
                     <br />
                         <div className="title_P">Quantidade Faturada</div>
                         <div className="N_Ordem_P">
-                            <input type="number" name="input" autoFocus="true" id="ordem" placeholder="Digite o número da ordem" required />
+                            <input type="number" name="input" value={valorCampo} onChange={HandleValorCampo} autoFocus="true" id="ordem" placeholder="Digite o número da ordem" required />
                         </div>
                     </div>
                     <div className="input_right_P">
@@ -36,9 +50,9 @@ export const Pedidos = (props) => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><label><input type="checkbox" /></label></td>
+                            <td><label><input type="checkbox" onClick={Faturar}/></label></td>
                             <td>32</td>
-                            <td>100,98</td>
+                            <td>{valorProduzido}</td>
                             <td>KG</td>
                         </tr>
                         <tr>
@@ -64,7 +78,7 @@ export const Pedidos = (props) => {
                 </div>
                 <div className="AreaButton_P">
                     <div className="button_left_P">
-                        <a href="#abrirModal">Faturar</a>
+                        <a href="#">Faturar</a>
                     </div>
                     <div className="button-right_P">
                         <a href="login.html">Fechar Sistema</a>

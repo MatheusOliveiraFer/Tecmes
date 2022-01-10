@@ -2,7 +2,7 @@ import './styleAP.css'
 
 import React from 'react';
 import { useState } from 'react';
-import { PainelProducao } from '../OP/indexOP';
+
 
 
 export const AProducao = (props) => {
