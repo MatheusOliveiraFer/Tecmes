@@ -12,7 +12,7 @@ export const PainelProducao = (props) => {
                     <div className="input_left">
                             <div className="title">Cliente:</div>
                             <div className="cliente">
-                                <input type="text" name="input" id="email"
+                                <input type="text" name="input" id="email" autoFocus="true"
                                 pattern=".+@globex\.com" size="30" placeholder="Digite nome do cliente" required />
                             </div>
                             <div className="title">Quantidade:</div>

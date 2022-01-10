@@ -32,7 +32,7 @@ export const AProducao = (props) => {
                     <div className="input_left_AP">
                         <div className="title_AP">Número da Ordem:</div>
                         <div className="N_Ordem_AP">
-                            <input type="number" name="input" id="ordem" placeholder="Digite o número da ordem" required />
+                            <input type="number"  autoFocus="true"  name="input" id="ordem" placeholder="Digite o número da ordem" required />
                         </div>
                         <div className="title_AP">Cliente:</div>
                         <div className="cliente_AP">

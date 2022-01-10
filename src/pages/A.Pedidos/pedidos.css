@@ -1,119 +1,349 @@
 section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-::placeholder {
-  color:#424444;
-  font-size: 20px;
-  font-weight: 500;
-}
-input:focus { 
-  outline: none !important;
-  border-color: #424444;
-  box-shadow: 0 0 10px #424444;
-}
-.content_P {
-    width: 70%;
-    height: 600px;
-    -webkit-box-shadow: -1px 4px 17px 1px rgba(0,0,0,0.72); 
-    box-shadow: -1px 4px 17px 1px rgba(0,0,0,0.72);
-    z-index: 997;
-    margin-top: -100px;
-    display: flex;
-    flex-direction: column;
-    background-color: #FFF;
-    border-radius: 5px;
-}
-.title_formulario_P {
-  width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: #24EDD2;
+}
+::placeholder {
+color:#424444;
+font-size: 20px;
+font-weight: 500;
+}
+input:focus { 
+outline: none !important;
+border-color: #424444;
+box-shadow: 0 0 10px #424444;
+}
+.content_P {
+  width: 70%;
+  height: 600px;
+  -webkit-box-shadow: -1px 4px 17px 1px rgba(0,0,0,0.72); 
+  box-shadow: -1px 4px 17px 1px rgba(0,0,0,0.72);
+  z-index: 997;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+.title_formulario_P {
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #24EDD2;
 }
 .title_formulario_h1_P {
-  font-size: 35px;
-  color: #000;
-  font-family: 'Lora', serif;
-  font-weight: 500;
+font-size: 35px;
+color: #000;
+font-family: 'Lora', serif;
+font-weight: 500;
+}
+.title_formulario_h2_P {
+font-size: 20px;
+}
+.painel_P {
+width: 100%;
+height: 110px;
+display: flex;
+}
+.input_left_P {
+width: 50%;
+height: 110px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.title_P {
+margin-left: 40px;
+font-size: 22px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+}
+.cliente_P, 
+.quantidade_P, 
+.N_Ordem_P {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.input_right_P {
+width: 50%;
+height: 110px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.tableF {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.produto_P, 
+.pedido_P,
+.data_P {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.painel_P label {
+font-size: 20px;
+}
+.painel_P input {
+width: 80%;
+height: 50px;
+border: 0.5px solid #47d0bd;
+border-radius: 10px;
+padding-left: 10px;
+margin-bottom: 25px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 20px;
+color: #424d4d;
+}
+.AreaButton_P {
+width: 100%;
+height: 120px;
+display: flex;
+}
+
+.button_left_P {
+width: 50%;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.button-right_P {
+width: 50%;
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button_left_P a{
+display: block;
+width: 50%;
+height: 30px;
+line-height: 30px;
+padding: 12px 5px;
+background-color: #369686;
+color: #FFF;
+border-radius: 10px;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+box-shadow: 0 0 10px #719ECE;
+}
+.button-right_P a{
+display: block;
+width: 50%;
+height: 30px;
+line-height: 30px;
+padding: 12px 5px;
+background-color: #1b3330;
+color: #FFF;
+border-radius: 10px;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+box-shadow: 0 0 10px #719ECE;
+}
+.modal_P {
+width: 100%;
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: rgba(0,0,0,0.8);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal_P:target {
+opacity: 1;
+pointer-events: auto;
+}
+.modal_P > div {
+width: 100%;
+position: relative;
+margin: 10% auto;
+padding: 15px 20px;
+background: #fff;
+}
+.fechar_P {
+position: absolute;
+width: 40px;
+height: 40px;
+right: 10px;
+top: 230px;
+text-align: center;
+line-height: 40px;
+margin-top: 5px;
+background-color: #4F6363;
+border-radius: 50%;
+font-size: 16px;
+color: #FFF;
+text-decoration: none;
 }
 table {
-    margin-top: 20px;
-    font-family: arial;
-    max-width: 100%;
-    background-color: #FFF;
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
-  .table { 
+margin-top: 20px;
+font-family: arial;
+max-width: 91%;
+background-color: #FFF;
+border-collapse: collapse;
+border-spacing: 0;
+border: 1px solid rgb(161, 153, 153);
+}
+
+.table_P { 
+width: 100%;
+margin-bottom: 20px;
+}
+.table_P thead tr th {
+  text-align: center;
+}
+.table_P tbody tr td {
+  text-align: center;
+}
+
+.table_P th,
+.table_P td {
+font-weight: normal;
+font-size: 12px;
+padding: 8px 15px;
+line-height: 20px;
+text-align: left;
+vertical-align: middle;
+border-top: 1px solid #4F6363;
+}
+.table_P thead th {
+background: #4F6363;
+vertical-align: bottom;
+color: #FFF;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+}  
+.table_P tbody > tr:nth-child(odd) > td,
+.table_P tbody > tr:nth-child(odd) > th {
+background-color: #fafafa;
+}    
+
+.table_P tbody > tr:nth-child(odd) > td,
+.table_P tbody > tr:nth-child(odd) > th {
+background-color: #ece3e3;
+}    
+.table_P .t-small_P {
+width: 5%;
+}
+.table_P .t-medium_P {
+width: 35%;
+}
+.table .t-status_P {
+font-weight: bold;
+}
+.table_P .t-active_P {
+color: #46a546;
+}
+.table_P .t-inactive_P {
+color: #e00300;
+}
+.table_P .t-draft_P {
+color: #f89406;
+}
+.table_P .t-scheduled_P {
+color: #049cdb;
+}
+
+/* Small Sizes */
+@media (max-width: 480px) { 
+.table-action_P thead {
+  display: none;
+}
+.table-action_P tr {
+  border-bottom: 1px solid #dddddd;
+}
+.table-action_P td {
+  border: 0;
+}
+.table-action_P td:not(:first-child) {
+  display: block;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .content_P {
     width: 100%;
-    margin-bottom: 20px;
+    height: 950px;
+    margin-top: 0px;
+    z-index: 0;
   }
-  
-  .table th,
-  .table td {
-    font-weight: normal;
-    font-size: 12px;
-    padding: 8px 15px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: middle;
-    border-top: 1px solid #4F6363;
+  .title_formulario_P {
+    height: 100px;
   }
-  .table thead th {
-    background: #4F6363;
-    vertical-align: bottom;
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-  }  
-  .table tbody > tr:nth-child(odd) > td,
-  .table tbody > tr:nth-child(odd) > th {
-    background-color: #fafafa;
-  }    
-  
-  .table tbody > tr:nth-child(odd) > td,
-  .table tbody > tr:nth-child(odd) > th {
-    background-color: #ece3e3;
-  }    
-  .table .t-small {
-    width: 5%;
+  .painel_P {
+    height: 250px;
+    flex-direction: column;
   }
-  .table .t-medium {
-    width: 15%;
+  .input_left_P {
+    width: 100%;
   }
-  .table .t-status {
-    font-weight: bold;
+  .input_right_P {
+    width: 100%;
   }
-  .table .t-active {
-    color: #46a546;
+  .tableF {
+    width: 100%;
+    height: 500px;  
   }
-  .table .t-inactive {
-    color: #e00300;
+  .AreaButton_P {
+    flex-direction: column;
   }
-  .table .t-draft {
-    color: #f89406;
+  .button_left_P {
+    width: 100%;
   }
-  .table .t-scheduled {
-    color: #049cdb;
+  .button-right_P {
+    width: 100%;
   }
-  
-  /* Small Sizes */
-  @media (max-width: 480px) { 
-    .table-action thead {
-      display: none;
-    }
-    .table-action tr {
-      border-bottom: 1px solid #dddddd;
-    }
-    .table-action td {
-      border: 0;
-    }
-    .table-action td:not(:first-child) {
-      display: block;
-    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 844px) {
+  .content_P {
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+    z-index: 0;
   }
+  .title_formulario_P {
+    height: 100px;
+  }
+  .painel_P {
+    height: 120px;
+  }
+  .AreaButton_P {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 845px) and (max-width: 1024px) {
+  .content_P {
+    width: 95%;
+    height: 500px;
+    margin-top: -70px;
+    z-index: 0;
+  }
+}
